@@ -214,6 +214,64 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Meal Prepping Section */}
+      <section className="py-20 bg-[#0d0d0d]">
+        <div className="container-luxury max-w-6xl">
+          {/* Section heading with decorative lines */}
+          <div className="flex items-center gap-4 mb-14">
+            <div className="flex-1 h-px bg-[#c9a96e]" />
+            <h2 className="font-serif italic text-2xl md:text-3xl text-white text-center px-4 whitespace-nowrap">
+              NOW INTRODUCING MEAL PREPPING !
+            </h2>
+            <div className="flex-1 h-px bg-[#c9a96e]" />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Image 1 */}
+            <div className="relative aspect-video overflow-hidden group">
+              <Image
+                src="https://img1.wsimg.com/isteam/ip/7b1c7b35-a337-47dd-a52f-a1d6f6762414/vecteezy_healthy-meal-prep-containers-with-gri.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:730,cg:true"
+                alt="Healthy meal prep containers with grilled chicken, quinoa and vegetables"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                unoptimized
+              />
+            </div>
+            {/* Image 2 */}
+            <div className="relative aspect-video overflow-hidden group">
+              <Image
+                src="https://img1.wsimg.com/isteam/ip/7b1c7b35-a337-47dd-a52f-a1d6f6762414/vecteezy_p-down-view-of-weekly-meal-prep-conta.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:730,cg:true"
+                alt="Weekly meal prep containers with colorful healthy food"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                unoptimized
+              />
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div>
+              <p className="text-[#aaa] text-base leading-relaxed">
+                We invite you to inquire about our customized meal plans, exquisitely curated to reflect your personal
+                tastes, lifestyle, and dietary preferences. Each offering is thoughtfully crafted with the finest
+                ingredients and culinary artistry, delivering an indulgent dining experience tailored exclusively for you.
+              </p>
+            </div>
+            <div>
+              <p className="text-[#aaa] text-base leading-relaxed mb-8">
+                From globally inspired flavors to refined, health-conscious options, every menu is tailored to deliver
+                a unique and satisfying culinary experience. Whether you desire weekly prepared meals, private chef
+                services, or specialized menus for wellness, fitness, or special occasions, our team ensures
+                impeccable quality, presentation, and flavor in every bite.
+              </p>
+              <Link href="/meal-plans" className="btn-gold">
+                Learn More
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Inquiry Form Section */}
       <section className="py-20 bg-[#111]" id="inquiry">
         <div className="container-luxury max-w-2xl text-center">
