@@ -20,8 +20,18 @@ export default function DiamondLinePage() {
               "url('https://img1.wsimg.com/isteam/stock/11598/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1440,cg:true')",
           }}
         />
-        <div className="relative z-10 container-luxury max-w-3xl py-24">
-          <p className="section-heading">Exclusive Services</p>
+        <div className="relative z-10 container-luxury max-w-4xl py-24">
+          {/* Diamond Lines Logo */}
+          <div className="flex justify-center mb-8">
+            <Image
+              src="https://img1.wsimg.com/isteam/ip/7b1c7b35-a337-47dd-a52f-a1d6f6762414/The%20_Diamond%20Lines%20Yacht%20%26%20Airline%20Catering_%20l.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:400,cg:true"
+              alt="Diamond Lines Yacht & Airline Catering"
+              width={300}
+              height={300}
+              className="object-contain drop-shadow-2xl"
+              unoptimized
+            />
+          </div>
           <h1 className="font-serif text-4xl md:text-5xl text-white mb-6 leading-tight">
             Diamond Line
           </h1>
