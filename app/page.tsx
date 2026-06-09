@@ -100,23 +100,117 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Yacht & Flight Banner */}
+      {/* Diamond Line / Yacht & Flight Banner */}
       <section className="py-20 bg-[#0d0d0d]">
-        <div className="container-luxury text-center max-w-3xl">
-          <p className="section-heading">New Service</p>
-          <h2 className="section-title">
-            NOW INTRODUCING CATERING FOR CHARTERED YACHTS &amp; FLIGHTS!
-          </h2>
-          <div className="gold-divider mx-auto" />
-          <p className="text-[#aaa] text-sm leading-relaxed mb-6">
-            We are proud to now offer exclusive, luxury catering services for chartered yachts and private flights,
-            delivering exceptional cuisine and elevated dining experiences wherever your journey takes you. Whether
-            you&apos;re planning an intimate getaway or hosting distinguished guests, our team ensures every detail is
-            flawlessly executed. Please inquire below to learn more and customize your experience.
-          </p>
-          <Link href="/diamond-line#b84f7a18-aba9-454f-a620-75dbdb7a1bce" className="btn-gold mr-4">
-            Learn More
-          </Link>
+        <div className="container-luxury max-w-5xl">
+          {/* Section heading with decorative lines */}
+          <div className="flex items-center gap-4 mb-12">
+            <div className="flex-1 h-px bg-[#c9a96e]" />
+            <h2 className="font-serif italic text-2xl md:text-3xl text-white text-center px-4">
+              NOW INTRODUCING CATERING FOR CHARTERED YACHTS &amp; FLIGHTS !
+            </h2>
+            <div className="flex-1 h-px bg-[#c9a96e]" />
+          </div>
+
+          {/* Logo + Text layout */}
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Diamond Lines Logo */}
+            <div className="flex justify-center">
+              <Image
+                src="https://img1.wsimg.com/isteam/ip/7b1c7b35-a337-47dd-a52f-a1d6f6762414/The%20_Diamond%20Lines%20Yacht%20%26%20Airline%20Catering_%20l.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:400,cg:true"
+                alt="Diamond Lines Yacht & Airline Catering"
+                width={380}
+                height={380}
+                className="object-contain"
+                unoptimized
+              />
+            </div>
+
+            {/* Text + CTA */}
+            <div className="text-center md:text-left">
+              <p className="text-[#aaa] text-base leading-relaxed italic mb-8">
+                We are proud to now offer exclusive, luxury catering services for chartered yachts and private flights,
+                delivering exceptional cuisine and elevated dining experiences wherever your journey takes you. Whether
+                you&apos;re planning an intimate getaway or hosting distinguished guests, our team ensures every detail is
+                flawlessly executed. Please inquire below to learn more and customize your experience.
+              </p>
+              <Link href="/diamond-line#b84f7a18-aba9-454f-a620-75dbdb7a1bce" className="btn-gold">
+                Learn More
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partner Badges */}
+      <section className="py-12 bg-[#111] border-t border-[#2a2a2a]">
+        <div className="container-luxury max-w-5xl">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+            {/* BBB Accredited Business */}
+            <a
+              href="https://www.bbb.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-80 hover:opacity-100 transition-opacity"
+            >
+              <div className="flex items-center gap-2 border border-[#3a3a3a] px-4 py-3 bg-[#1a3a5c]">
+                <span className="text-white font-bold text-2xl leading-none">BBB</span>
+                <div className="text-left">
+                  <p className="text-white text-xs font-bold leading-tight">ACCREDITED</p>
+                  <p className="text-white text-xs font-bold leading-tight">BUSINESS</p>
+                </div>
+              </div>
+            </a>
+
+            {/* Bark Elite Pro */}
+            <a
+              href="https://www.bark.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-80 hover:opacity-100 transition-opacity"
+            >
+              <div className="border border-[#3a3a3a] px-4 py-3 text-center bg-[#1a1a1a]">
+                <div className="flex justify-center gap-0.5 mb-1">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-3 h-3 text-[#c9a96e]" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-[#c9a96e] text-xs font-bold tracking-widest uppercase">ELITE PRO</p>
+                <p className="text-white text-xs mt-1">Luxury Event Planning</p>
+                <p className="text-white text-xs">and Catering</p>
+              </div>
+            </a>
+
+            {/* WeddingWire */}
+            <a
+              href="https://www.weddingwire.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-80 hover:opacity-100 transition-opacity"
+            >
+              <div className="border border-[#3a3a3a] px-4 py-3 text-center bg-[#1a1a1a]">
+                <p className="text-[#888] text-xs tracking-widest uppercase mb-1">Find Me On</p>
+                <p className="text-white text-xl font-bold tracking-wide">
+                  <span className="text-[#4db6ac]">Wedding</span>Wire
+                </p>
+              </div>
+            </a>
+
+            {/* The Knot */}
+            <a
+              href="https://www.theknot.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-80 hover:opacity-100 transition-opacity"
+            >
+              <div className="border border-[#3a3a3a] px-4 py-3 text-center bg-[#e91e8c] rounded-full w-24 h-24 flex flex-col items-center justify-center">
+                <p className="text-white text-xs leading-tight font-medium">As seen on</p>
+                <p className="text-white text-sm font-bold italic leading-tight">the knot</p>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
