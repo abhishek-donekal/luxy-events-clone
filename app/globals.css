@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #c9a96e;
+  --gold-light: #dfc28c;
+  --gold-dark: #a8823e;
+  --black: #0d0d0d;
+  --dark: #1a1a1a;
+  --mid: #2a2a2a;
+  --charcoal: #3a3a3a;
+  --white: #ffffff;
+  --off-white: #f5f0e8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+@layer components {
+  .btn-gold {
+    @apply inline-block bg-transparent border border-[#c9a96e] text-[#c9a96e] px-8 py-3 text-sm tracking-widest uppercase font-medium transition-all duration-300 hover:bg-[#c9a96e] hover:text-black cursor-pointer;
+  }
+
+  .btn-gold-filled {
+    @apply inline-block bg-[#c9a96e] text-black px-8 py-3 text-sm tracking-widest uppercase font-medium transition-all duration-300 hover:bg-[#dfc28c] cursor-pointer;
+  }
+
+  .section-heading {
+    @apply text-[#c9a96e] text-xs tracking-[0.25em] uppercase mb-2;
+  }
+
+  .section-title {
+    @apply text-white font-serif text-3xl md:text-4xl leading-tight mb-6;
+  }
+
+  .gold-divider {
+    @apply w-16 h-px bg-[#c9a96e] my-4;
+  }
+
+  .container-luxury {
+    @apply max-w-6xl mx-auto px-6;
+  }
+}
