@@ -27,12 +27,28 @@ export default function DiamondLinePage() {
           </h1>
           <div className="gold-divider mx-auto mb-8" />
           <p className="text-[#bbb] text-base leading-relaxed max-w-2xl mx-auto">
-            We invite you to inquire about Diamond Lines&apos; exclusive yacht and airline catering services...
+            We invite you to inquire about Diamond Lines&apos; exclusive yacht and airline catering services, where
+            luxury meets exceptional culinary craftsmanship.
           </p>
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* Intro description */}
+      <section className="py-16 bg-[#0d0d0d]">
+        <div className="container-luxury max-w-3xl text-center">
+          <p className="text-[#aaa] text-base leading-relaxed mb-4">
+            Our bespoke menus are thoughtfully curated to deliver refined, high-quality cuisine tailored to the unique
+            demands of in-flight and on-board dining.
+          </p>
+          <p className="text-[#aaa] text-base leading-relaxed">
+            From elegant small bites to full gourmet experiences, each offering is prepared with premium ingredients
+            and meticulous attention to detail—ensuring a seamless, sophisticated dining experience above the clouds
+            and across the sea.
+          </p>
+        </div>
+      </section>
+
+      {/* Our Passion */}
       <section id="b84f7a18-aba9-454f-a620-75dbdb7a1bce" className="py-20 bg-[#111]">
         <div className="container-luxury max-w-5xl">
           <div className="grid md:grid-cols-2 gap-16 items-center">
